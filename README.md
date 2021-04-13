@@ -62,8 +62,8 @@ For  training a model for other CNV callers, use 'CNV-P_featureExtract_main.py' 
 ```
 python script/CNV-P_featureExtract_main.py -b test-data/HG002.test.bam -bed test-data/HG002.Lumpy.fil.mer.bed -bas test-data/HG002.bam.bas -sam HG002 -o test-data/out/
 ```
-then，run the "script/CNV-P_predict_main.py" to train a model  
-run " python script/CNV-P_predict_main.py -h " to see the USAGE;  
+then，run the "script/CNV-P_training_main.py" to train a model  
+run " python script/CNV-P_training_main.py -h " to see the USAGE;  
 ```
 usage: CNV-P_training_main.py [-h] [-m model] -s CNVcaller -fea featuresfile
                               -lab labelfile [-o outdir]

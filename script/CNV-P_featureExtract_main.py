@@ -38,7 +38,7 @@ ap.add_argument(
 )
 
 ap.add_argument(
-    '-sam',
+    '-n',
     '--Samplename',
     type=str,
     default='CNV-P',

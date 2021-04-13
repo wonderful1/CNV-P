@@ -37,7 +37,7 @@ optional arguments:
   -bas basfile, --basfile basfile
                         file that provide mean insert-size and sequencing
                         depth
-  -sam Samplename, --Samplename Samplename
+  -n Samplename, --Samplename Samplename
                         Samplename that use as prefix of result
   -o outdir, --output outdir
                         the directory into which output files will go

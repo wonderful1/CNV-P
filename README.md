@@ -67,7 +67,7 @@ HG002	568.177944	163.819637	35.41
 
 #### 1.2 output
 **samplename.feature.txt**: Extracted feature matrix.  
-**samplename.pre.prop.txt**: The prediction result and probability score. Including 6 columns:
+**samplename.pre.prop.txt**: The prediction result and probability score. Including 7 columns:
 ```
 ChrID: Chromosome (e.g. chr3, chrY)
 start: Start coordinate on the chromosome 

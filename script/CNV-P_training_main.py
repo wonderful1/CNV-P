@@ -73,7 +73,7 @@ ap.add_argument(
     type=str,
     default='./',
     metavar='outdir',
-    help='the directory into which output files will go'
+    help='output directory'
 )
 
 args = ap.parse_args()

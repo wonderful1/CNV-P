@@ -27,7 +27,7 @@ def Read_bas(bas):
      for line in bas_f:
           line=line.strip("\n")
           line_list=line.split("\t")
-          RG_bas[line_list[6]]=line_list[17]+"\t"+line_list[18]+"\t"+line_list[-1]
+          RG_bas[line_list[0]]=line_list[1]+"\t"+line_list[2]+"\t"+line_list[3]
      bas_f.close()
      return RG_bas
 

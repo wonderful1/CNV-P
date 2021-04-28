@@ -1,5 +1,5 @@
 # CNV-P: A machine-learning framework for filtering copy number variations
-CNV-PG is a novel and post–processing approach for CNV filtering.  
+CNV-P is a novel and post–processing approach for CNV filtering.  
 
 ## Prerequisites:
 [python3](https://www.python.org/)  

@@ -137,3 +137,30 @@ python script/CNV-P_training_main.py -s Lumpy -fea test-data/HG002.Lumpy.chr1.fe
 
 Please help us improve CNV-P by reporting bugs or ideas on how to make things better.  
 
+<br>  
+<br>  
+  
+## Comparison with CNV-JACG, MetaSV and hard cutoff method
+We compared the performance of CNV-P with that of CNV- JACG (Zhuang et al. 2020), MetaSV (Mohiyuddin et al. 2015) and hard cutoff method in the same datasets. Since MetaSV currently does not support Delly's output, only four CNV detection tools (Lumpy, Manta, Pindel, and breakdancer) were taken into consideration. CNV-JACG was conducted running with default parameters. MetaSV was carried out with complete mode. For hard cutoff method, we used SR and RP as the evidence to support the existence of CNVs, therefore, the number of SR and RP greater than 2, 5, and 10 were set as hard cutoff to evaluate. SURVIVOR(Jeffares et al. 2017) was used to merge fragments with 80% overlap after filtering by CNV-P, CNV- JACG, MetaSV and hard cutoff method.  
+<br>  
+Process framework：
+![Q798(22YAP0`ZL5SB8M~X2A](https://user-images.githubusercontent.com/19549825/138427479-f734fa8c-36b8-4340-a4a6-5b4cdc9634fc.png)
+<br>    
+Comparison with CNV-JACG, MetaSV and hard cutoff method in NA12878 and HG002.
+| Sample  | method         | precise | recall | F1-score |
+|---------|----------------|---------|--------|----------|
+| NA12878 | RAW            | 0.6032  | 1.0000 | 0.7525   |
+|         | Hard_Cutoff_2  | 0.6197  | 0.9792 | 0.7590   |
+|         | Hard_Cutoff_5  | 0.7145  | 0.8630 | 0.7818   |
+|         | Hard_Cutoff_10 | 0.7780  | 0.6976 | 0.7356   |
+|         | CNV-JACG       | 0.6828  | 0.7496 | 0.7146   |
+|         | MetaSV         | 0.7094  | 0.8817 | 0.7862   |
+|         | CNV-P          | 0.9007  | 0.7977 | 0.8461   |
+|         |  |   | |   |
+| HG002   | RAW            | 0.2054  | 1.0000 | 0.3408   |
+|         | Hard_Cutoff_2  | 0.4026  | 0.9729 | 0.5695   |
+|         | Hard_Cutoff_5  | 0.5740  | 0.8653 | 0.6901   |
+|         | Hard_Cutoff_10 | 0.6642  | 0.7482 | 0.7037   |
+|         | CNV-JACG       | 0.5443  | 0.7076 | 0.6153   |
+|         | MetaSV         | 0.5917  | 0.8274 | 0.6900   |
+|         | CNV-P          | 0.7078  | 0.7516 | 0.7290   |

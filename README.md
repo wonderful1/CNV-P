@@ -147,7 +147,7 @@ Process framework：
 ![Q798(22YAP0`ZL5SB8M~X2A](https://user-images.githubusercontent.com/19549825/138427479-f734fa8c-36b8-4340-a4a6-5b4cdc9634fc.png)
 <br>    
 Comparison with CNV-JACG, MetaSV and hard cutoff method in NA12878 and HG002.
-| Sample  | method         | precise | recall | F1-score |
+| Sample  | method         | precision | recall | F1-score |
 |---------|----------------|---------|--------|----------|
 | NA12878 | RAW            | 0.6032  | 1.0000 | 0.7525   |
 |         | Hard_Cutoff_2  | 0.6197  | 0.9792 | 0.7590   |

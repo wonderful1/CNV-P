@@ -1,6 +1,9 @@
 # CNV-P: A machine-learning framework for filtering copy number variations
 CNV-P is a novel and post–processing approach for CNV filtering.  
 
+Cite this as  
+Wang T, Sun J, Zhang X, Wang W, Zhou Q. 2021. CNV-P: a machine-learning framework for predicting high confident copy number variations. PeerJ 9:e12564 https://doi.org/10.7717/peerj.12564  
+
 ## Prerequisites:
 [python3](https://www.python.org/)  
 [sklearn](https://pypi.org/project/sklearn/)  
